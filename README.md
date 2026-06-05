@@ -26,6 +26,12 @@ When invoked, the skill drives a five-step analysis:
 It also has a lightweight **teaching mode** for "just explain the framework"
 requests.
 
+## Example output
+
+A run on a fictional habit-tracking app (illustrative):
+
+![Example value-chain analysis for a fictional app](assets/example-analysis.png)
+
 ## Install
 
 Clone into your Claude Code skills directory:
@@ -47,8 +53,10 @@ breakdown".
 ```
 porters-value-chain/
 ├── SKILL.md                        # the skill: trigger + workflow
-└── references/
-    └── translation-table.md        # software-adapted activity lenses
+├── references/
+│   └── translation-table.md        # software-adapted activity lenses
+└── assets/
+    └── example-analysis.png        # example output (for the README)
 ```
 
 ## Usage
