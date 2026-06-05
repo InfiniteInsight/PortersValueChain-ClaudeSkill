@@ -1,0 +1,19 @@
+{
+  "name": "infiniteinsight",
+  "owner": {
+    "name": "Evan Nevermore",
+    "email": "infiniteinsight@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by InfiniteInsight",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "porters-value-chain",
+      "source": "./",
+      "description": "Porter's Value Chain analysis skill — activity matrix, value-chain diagram, and prioritized strategic synthesis for companies or your own software projects.",
+      "version": "1.0.0"
+    }
+  ]
+}

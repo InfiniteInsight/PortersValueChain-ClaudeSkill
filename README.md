@@ -1,6 +1,6 @@
 # Porter's Value Chain — Claude Skill
 
-A [Claude Code](https://claude.com/claude-code) skill that applies Michael
+A [Claude Code](https://claude.com/claude-code) plugin that applies Michael
 Porter's **Value Chain** framework to find where competitive advantage and
 margin are created — for an external company **or** one of your own software
 projects.
@@ -30,33 +30,49 @@ requests.
 
 A run on a fictional habit-tracking app (illustrative):
 
-![Example value-chain analysis for a fictional app](assets/example-analysis.png)
+![Example value-chain analysis for a fictional app](skills/porters-value-chain/assets/example-analysis.png)
 
-## Install
+## Install (recommended — as a plugin)
 
-Clone into your Claude Code skills directory:
+In Claude Code, add this repo as a marketplace, then install the plugin:
+
+```
+/plugin marketplace add InfiniteInsight/PortersValueChain-ClaudeSkill
+/plugin install porters-value-chain@infiniteinsight
+```
+
+`infiniteinsight` is the marketplace name; `porters-value-chain` is the plugin.
+Once installed, the skill auto-triggers on phrases like "value chain",
+"competitive advantage", "where's the margin", or "strategy breakdown". You can
+also invoke it manually as `/porters-value-chain:porters-value-chain`.
+
+## Install (manual — without the plugin system)
+
+Copy just the skill folder into your personal skills directory:
 
 ```bash
-git clone https://github.com/InfiniteInsight/PortersValueChain-ClaudeSkill \
-  ~/.claude/skills/porters-value-chain
+git clone https://github.com/InfiniteInsight/PortersValueChain-ClaudeSkill /tmp/pvc
+cp -r /tmp/pvc/skills/porters-value-chain ~/.claude/skills/porters-value-chain
 ```
 
-Then restart Claude Code. The skill auto-registers and triggers on phrases like
-"value chain", "competitive advantage", "where's the margin", or "strategy
-breakdown".
+Then restart Claude Code. Invoked manually as `/porters-value-chain`.
 
-> Note: the install path must be `~/.claude/skills/porters-value-chain` (the
-> folder name should match the skill's `name`).
-
-## Files
+## Repo layout
 
 ```
-porters-value-chain/
-├── SKILL.md                        # the skill: trigger + workflow
-├── references/
-│   └── translation-table.md        # software-adapted activity lenses
-└── assets/
-    └── example-analysis.png        # example output (for the README)
+PortersValueChain-ClaudeSkill/
+├── .claude-plugin/
+│   ├── plugin.json                 # marks this repo a plugin
+│   └── marketplace.json            # marks this repo a marketplace (source: "./")
+├── skills/
+│   └── porters-value-chain/
+│       ├── SKILL.md                # the skill: trigger + workflow
+│       ├── references/
+│       │   └── translation-table.md
+│       └── assets/
+│           └── example-analysis.png
+├── README.md
+└── LICENSE
 ```
 
 ## Usage

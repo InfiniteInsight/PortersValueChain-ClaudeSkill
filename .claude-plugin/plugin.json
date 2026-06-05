@@ -1,0 +1,12 @@
+{
+  "name": "porters-value-chain",
+  "description": "Apply Porter's Value Chain framework to find where competitive advantage and margin are created — for a company or your own software project. Produces an activity matrix, a value-chain diagram, and a prioritized strategic synthesis.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Evan Nevermore",
+    "email": "infiniteinsight@gmail.com"
+  },
+  "homepage": "https://github.com/InfiniteInsight/PortersValueChain-ClaudeSkill",
+  "repository": "https://github.com/InfiniteInsight/PortersValueChain-ClaudeSkill",
+  "license": "MIT"
+}
