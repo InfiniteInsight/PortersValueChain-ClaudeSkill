@@ -83,6 +83,15 @@ Just ask, e.g.:
 - "Do a value-chain breakdown of my project to find where the margin is."
 - "Explain Porter's value chain." *(teaching mode)*
 
+## Privacy
+
+This plugin is a prompt-only skill — a set of instructions for Claude. It
+collects no data, includes no telemetry or analytics, makes no network
+requests, and runs no code of its own. During an analysis it may read context
+from your repository or conversation to inform the output, but that processing
+is handled locally by Claude Code and is never transmitted or stored by this
+plugin. Use of Claude Code itself is governed by Anthropic's privacy policy.
+
 ## License
 
 MIT
